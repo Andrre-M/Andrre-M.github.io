@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de André Mamede, Analista de Dados especializado em BI, automação e produtos de dados.">
+  <meta name="theme-color" content="#0b1220">
+  <title>André Mamede — Analista de Dados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início">AM<span>.</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Analista de Dados · BI · Automação</p>
+        <h1>Dados que saem da planilha e <span>viram decisão.</span></h1>
+        <p class="hero-text">Transformo processos manuais e dados dispersos em análises, automações e ferramentas que as pessoas realmente conseguem usar.</p>
+        <div class="actions">
+          <a class="button primary" href="#projetos">Ver projetos</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/andre-mamede/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Áreas de atuação">
+        <div class="signal"><span></span> Disponível para novos desafios</div>
+        <p class="panel-label">Meu foco</p>
+        <div class="focus-line"><strong>01</strong><span>Business Intelligence</span></div>
+        <div class="focus-line"><strong>02</strong><span>Engenharia de dados</span></div>
+        <div class="focus-line"><strong>03</strong><span>Automação de processos</span></div>
+        <div class="focus-line"><strong>04</strong><span>Produtos internos</span></div>
+      </div>
+    </section>
+
+    <section class="stack" aria-label="Tecnologias">
+      <span>Python</span><span>SQL</span><span>Power BI</span><span>ClickHouse</span><span>Polars</span><span>Google Apps Script</span><span>APIs</span><span>Excel</span>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="section-heading">
+        <p class="eyebrow">Trabalhos selecionados</p>
+        <h2>Projetos e cases</h2>
+        <p>Projetos públicos e soluções profissionais apresentadas de forma anonimizada.</p>
+      </div>
+
+      <article class="project featured">
+        <div class="project-copy">
+          <div class="project-meta"><span class="tag public">Projeto público</span><span>Dados eleitorais</span></div>
+          <h3>Atlas Eleitoral — Pipeline de dados do TSE</h3>
+          <p>Pipeline que coleta, transforma e valida dados públicos do TSE, publica tabelas em Parquet e alimenta um dashboard estático para exploração territorial e eleitoral.</p>
+          <div class="metrics">
+            <div><strong>143M+</strong><span>eventos processados</span></div>
+            <div><strong>23.765</strong><span>seções validadas</span></div>
+            <div><strong>184</strong><span>municípios</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://andrre-m.github.io/tse-urna-pipeline/" target="_blank" rel="noreferrer">Abrir dashboard ↗</a>
+            <a href="https://github.com/Andrre-M/tse-urna-pipeline" target="_blank" rel="noreferrer">Ver código ↗</a>
+          </div>
+        </div>
+        <div class="data-card" aria-label="Representação visual do pipeline eleitoral">
+          <div class="data-card-header"><span>PIPELINE STATUS</span><span class="online">● ONLINE</span></div>
+          <div class="chart" aria-hidden="true">
+            <span style="height:35%"></span><span style="height:52%"></span><span style="height:44%"></span><span style="height:70%"></span><span style="height:61%"></span><span style="height:86%"></span><span style="height:76%"></span><span style="height:100%"></span>
+          </div>
+          <div class="pipeline"><span>RAW</span><i>→</i><span>BRONZE</span><i>→</i><span>SILVER</span><i>→</i><span>GOLD</span></div>
+        </div>
+      </article>
+
+      <article class="project case-study">
+        <div class="project-copy">
+          <div class="project-meta"><span class="tag case">Case anonimizado</span><span>Qualidade de dados</span></div>
+          <h3>Monitoramento de inconsistências em vendas</h3>
+          <p>Solução interna para detectar vendas com falhas de associação, centralizar pendências e acompanhar sua resolução por meio de consultas analíticas, planilhas, alertas e dashboard.</p>
+          <div class="result-card">
+            <span>Tempo de processamento</span>
+            <strong>240s <i>→</i> ~50s</strong>
+            <small>redução aproximada de 79%</small>
+          </div>
+          <ul class="clean-list">
+            <li>Processamento incremental sem reprocessar registros conhecidos</li>
+            <li>Acompanhamento das ocorrências até a resolução</li>
+            <li>Integração entre SQL, APIs, planilhas e dashboard</li>
+          </ul>
+        </div>
+        <div class="flow-card">
+          <p class="panel-label">Fluxo da solução</p>
+          <div class="flow-step"><b>01</b><span><strong>Coleta</strong>Consulta à fonte analítica</span></div>
+          <div class="flow-step"><b>02</b><span><strong>Validação</strong>Aplicação das regras de qualidade</span></div>
+          <div class="flow-step"><b>03</b><span><strong>Acompanhamento</strong>Dashboard, alertas e histórico</span></div>
+        </div>
+      </article>
+
+      <article class="project case-study rh-case">
+        <div class="project-copy">
+          <div class="project-meta"><span class="tag case">Case anonimizado</span><span>Automação operacional</span></div>
+          <h3>Roteirização geográfica para operações de RH</h3>
+          <p>Web App criado para dar autonomia ao RH: a pessoa baixa o modelo, envia a planilha, confere as pendências e recebe sugestões de pontos de visita sem depender de execução técnica manual.</p>
+          <ul class="clean-list two-columns">
+            <li>Modelo de planilha pronto para uso</li>
+            <li>Upload e pré-visualização do arquivo</li>
+            <li>Validação visual das pendências</li>
+            <li>Geocodificação com validação de qualidade</li>
+            <li>Cálculo de distância e filtros operacionais</li>
+            <li>Resultado automático e histórico de uso</li>
+          </ul>
+          <p class="case-note">A solução processa uma base com milhares de estabelecimentos usando lotes e retomada automática para respeitar os limites da plataforma.</p>
+        </div>
+
+        <div class="product-mockup" aria-label="Demonstração fictícia da interface de roteirização">
+          <div class="mock-topbar"><span>Roteirização de visitas</span><span class="mock-avatar">RH</span></div>
+          <div class="mock-body">
+            <aside>
+              <p class="mock-label">NOVO PROCESSAMENTO</p>
+              <button type="button">↓ Baixar modelo .xlsx</button>
+              <div class="upload-box"><strong>Arraste a planilha</strong><span>ou selecione o arquivo</span></div>
+              <div class="mock-summary"><span>Prontos <b>18</b></span><span>Pendentes <b>2</b></span></div>
+            </aside>
+            <div class="mock-content">
+              <div class="mock-title"><span>Pré-visualização</span><small>Dados demonstrativos</small></div>
+              <div class="mock-row header"><span>COLABORADOR</span><span>CIDADE</span><span>STATUS</span></div>
+              <div class="mock-row"><span><i class="ok">✓</i> Pessoa 01</span><span>São Paulo</span><span class="ready">Pronto</span></div>
+              <div class="mock-row"><span><i class="ok">✓</i> Pessoa 02</span><span>Campinas</span><span class="ready">Pronto</span></div>
+              <div class="mock-row pending"><span><i>!</i> Pessoa 03</span><span>—</span><span>Revisar CEP</span></div>
+              <div class="history"><strong>Histórico recente</strong><span>Processamento #024 · concluído</span><span>Processamento #023 · concluído</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div>
+        <p class="eyebrow">Sobre mim</p>
+        <h2>Da análise à solução.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Sou Analista de Dados com atuação em Business Intelligence, análise de performance e automação de processos.</p>
+        <p>Trabalho com dados de ponta a ponta: investigo o problema, estruturo a informação, construo a análise e, quando necessário, desenvolvo a ferramenta que torna o processo utilizável no dia a dia.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <p class="eyebrow">Vamos conversar</p>
+      <h2>Procuro desafios em que dados precisem virar ação.</h2>
+      <div class="actions">
+        <a class="button light" href="https://www.linkedin.com/in/andre-mamede/" target="_blank" rel="noreferrer">Falar pelo LinkedIn ↗</a>
+        <a class="button outline-light" href="https://github.com/Andrre-M" target="_blank" rel="noreferrer">Ver GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>André Mamede · Analista de Dados</span>
+    <span>Projetos internos apresentados com dados fictícios.</span>
+  </footer>
+</body>
+</html>
